@@ -1,0 +1,196 @@
+*,ul,li{
+    margin: 0;
+}
+.container{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.first-banner{
+    padding-top: 5px;
+    background-image: url('./images/banner1.jpg');
+    width: 100%;
+    background-size: 100% 100%;
+    height: 600px;
+    position: relative;
+}
+.header-wrapper,.nevigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+.header-wrapper .menu a{
+    color: #fff;
+}
+.menu li{
+    text-decoration: underline;
+    font-style: italic;
+    text-underline-offset: 6px;
+}
+.top-banner-overlay img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 35%;
+    transform: translate(-64%, 40px);
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}
+.nevigation-wrapper{
+    margin: 15px;
+}
+.second-banner{
+    background-image: url('/images/banner2.jpg');
+    width: 100%;
+    background-size: 100% 100%;
+    height: 700px;
+    position: relative;
+}
+.history-logo-wrapper{
+    position: relative;
+    padding-top: 40px;
+}
+.history-logo-wrapper::after{
+    content: url('/images/history.png');
+    position: absolute;
+    top: 100px;
+    left: 122px;
+}
+.climb-logo-wrapper::after{
+    content: url('/images/climb.png');
+    position: absolute;
+    top: 60px;
+    left: 145px;
+}
+.climb-logo-wrapper{
+    position: relative;
+}
+.history-text{
+    max-width: 780px;
+    padding-left: 68px;
+}
+.climb-text {
+    max-width: 610px;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-one{
+    background-image: url('./images/slider-background.jpg');
+    width: 100%;
+}
+.slider-one{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+.climb-section{
+    padding: 20px 0;
+}
+.climb-contents{
+    display: flex;
+    align-items: center;
+}
+.mountain-nevigation{
+    background-color: #414F6A;
+}
+.nevigation-wrapper .menu a{
+    color: #414F6A;
+}
+.mountain-logos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.active{
+    background-color: #B0B4BE;
+    padding: 10px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: #414F6A;
+
+}
+.banner-three{
+    background-image: url('/images/banner3.png');
+    width: 100%;
+    background-size: 100% 100%;
+    height: 450px;
+    position: relative;
+}
+.schedule-section{
+    padding: 50px;
+    background-color: #fff;
+    max-width: 270px;
+    position: absolute;
+    top: 100px;
+    left: 22%;
+}
+.schedule-section h2{
+    padding-bottom: 20px;
+    color: #414F6A;
+    font-size: 33px;
+    text-transform: uppercase;
+}
+.d-none{
+    display: none;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-logos {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+.footer-wrapper p{
+    color: #B0B4BE;
+    font-size: 22px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.mountain-1,.mountain-2{
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) { 
+    .schedule-section {
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+}
